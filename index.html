@@ -1,17 +1,16 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <!-- Copyright (c) Microsoft Corporation. All Rights Reserved. -->
-	<title>HTML5 Sudoku</title>        
-        <meta http-equiv="Content-Language" content="en-us" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="application-name" content="HTML5 Sudoku" />
-        <meta name="msapplication-tooltip" content="Play Sudoku on IE TestDrive" />
-        <meta name="msapplication-starturl" content="https://internetexplorer.github.io/Sudoku/" />
-        <meta name="msapplication-navbutton-color" content="#C40502" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="stylesheet" type="text/css" href="demo.css" />
-	<link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+        <title>HTML5 Sudoku</title>
+        <meta charset="utf-8">
+        <meta name="application-name" content="HTML5 Sudoku">
+        <meta name="msapplication-tooltip" content="Play Sudoku on IE TestDrive">
+        <meta name="msapplication-starturl" content="https://internetexplorer.github.io/Sudoku/">
+        <meta name="msapplication-navbutton-color" content="#C40502">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="demo.css">
+        <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
     </head>
     <body>
         <div id="Wrapper">
@@ -20,24 +19,24 @@
                 <div id="Content">
                     <div id="Column1">
                         <span role="tab" aria-selected="true" aria-controls="demoIntro" tabindex="100">In this demo we take the well-known game of Sudoku, and demonstrate how developers can use HTML5 and JavaScript to create an efficient algorithm to solve these puzzles. The algorithms draw heavily on the Chakra engine’s support for ECMAScript 5 standard array operations to rapidly solve many Sudoku games. You can also manually solve Sudoku puzzles.</span>
-                        <br/>
-                        <br/>
-                        <br/>
+                        <br>
+                        <br>
+                        <br>
                         <label># of Games:</label>&nbsp;&nbsp;
                             <select id="difficulty">
                                 <option value="1">1000</option>
                                 <option value="2" selected>5000</option>
                                 <option value="3">10000</option>
                             </select>
-                        <input id="amazeButton" type="submit" value="SOLVE GAMES" />
-                        <br/>
-                        <br/>
+                        <input id="amazeButton" type="submit" value="SOLVE GAMES">
+                        <br>
+                        <br>
                         <div id="calculating" style="display: none;">
-                            <img src="images/iconTime.png" alt="Calculating Clock" /><span class="finishedLabel">Solving puzzles...</span>
+                            <img src="images/iconTime.png" alt="Calculating Clock"><span class="finishedLabel">Solving puzzles...</span>
                         </div>
                         <div role="tab" aria-selected="true" aria-controls="perfResults" tabindex="200" id="finishedCalculating" style="display: none;">
-                            <img src="images/iconTime.png" alt="Calculating Clock" /><span class="finishedLabel">Finished In:</span>
-                            <br/>
+                            <img src="images/iconTime.png" alt="Calculating Clock"><span class="finishedLabel">Finished In:</span>
+                            <br>
                             <span id="timeFinished"></span>
                         </div>
                     </div>
@@ -54,24 +53,24 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="01" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="02" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="10" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="11" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -88,7 +87,7 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="21" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -104,7 +103,7 @@
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="03" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -121,34 +120,34 @@
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="13" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="14" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="15" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="23" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="24" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="25" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
@@ -159,7 +158,7 @@
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="06" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -186,7 +185,7 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="18" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
@@ -198,7 +197,7 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="27" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -216,7 +215,7 @@
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="30" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -226,14 +225,14 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="32" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="40" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -243,14 +242,14 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="42" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="50" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -271,7 +270,7 @@
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="33" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -281,7 +280,7 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="35" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
@@ -293,7 +292,7 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="44" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -305,7 +304,7 @@
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="53" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -315,7 +314,7 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="55" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
@@ -336,14 +335,14 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="38" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="46" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -353,14 +352,14 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="48" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="56" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -370,7 +369,7 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="58" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
@@ -388,7 +387,7 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="61" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -400,7 +399,7 @@
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="70" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -427,7 +426,7 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="82" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
@@ -438,34 +437,34 @@
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="63" class="editValue error">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="64" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="65" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="73" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="74" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="75" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
@@ -482,7 +481,7 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="85" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
@@ -498,7 +497,7 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="67" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -515,24 +514,24 @@
                                             </td>
                                             <td class="boardCell">
                                                 <div id="77" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="78" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="boardCell">
                                                 <div id="86" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
                                                 <div id="87" class="editValue">
-                                                    <input/>
+                                                    <input>
                                                 </div>
                                             </td>
                                             <td class="boardCell">
@@ -548,8 +547,8 @@
                     </div>
                     <div id="Column2">
                         <div class="gameControlSet">
-                            <input id="newGameButton" type="submit" value="NEW GAME" class="gameControls"/>
-                            <br/>
+                            <input id="newGameButton" type="submit" value="NEW GAME" class="gameControls">
+                            <br>
                             <label>
                                 Level:
                             </label>&nbsp;&nbsp;
@@ -562,13 +561,13 @@
                             </select>
                         </div>
                         <div class="gameControlSet">
-                            <input id="checkButton" type="submit" value="CHECK &#x2713;" class="gameControls"/>
-                            <br/>
+                            <input id="checkButton" type="submit" value="CHECK &#x2713;" class="gameControls">
+                            <br>
                             <span id="errorsFound" class="errorsFound" style="display: none;" role="tab" aria-selected="true" aria-controls="ErrorsFound" tabindex="300">MISTAKE FOUND</span>
                             <span id="noErrors" class="noErrors" style="display: none;" role="tab" aria-selected="true" aria-controls="NoErrorsFound" tabindex="400">LOOKIN GOOD</span>
                         </div>
                         <div class="gameControlSet">
-                            <input id="solveButton" type="submit" value="SOLVE" class="gameControls"/>
+                            <input id="solveButton" type="submit" value="SOLVE" class="gameControls">
                         </div>
                     </div>
                 </div>
@@ -577,16 +576,16 @@
         <div id="youWon" style="display: none;">
             <div>
                 <span role="alert" aria-selected="true" aria-controls="youWin" tabindex="500">YOU WIN!</span>
-                <br/>
+                <br>
                 <small role="tab" aria-selected="true" aria-controls="youWinText" tabindex="600">
                     Great job. Can you do it again?
                 </small>
-                <br/>
-                <br/>
-                <input id="winNewGameButton" type="submit" value="NEW GAME" class="gameControls"/>
-                <input id="winCloseButton" type="submit" value="CLOSE" class="gameControls"/>
+                <br>
+                <br>
+                <input id="winNewGameButton" type="submit" value="NEW GAME" class="gameControls">
+                <input id="winCloseButton" type="submit" value="CLOSE" class="gameControls">
             </div>
         </div>
-        <script type="text/javascript" src="demo.js"></script>
+        <script src="demo.js"></script>
     </body>
 </html>
