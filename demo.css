@@ -293,3 +293,6 @@ small
 {
     border: 1px solid #ED823F;
 }
+input[type=submit]{
+border-radius : 10px;
+}
